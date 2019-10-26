@@ -9,7 +9,10 @@ public abstract class Plant implements Comparable<Plant> {
     private String family;
     private String name;
 
-    Plant(double height, String family, String name) {
+    protected Plant(double height, String family, String name) {
+        if(height <= 0) throw new IllegalArgumentException("too small!") ;
+        if(family == null || family.length() == 0) throw new IllegalArgumentException("no family!");
+        if(name == null || name.length() == 0) throw new IllegalArgumentException("no name!");
         this.height = height;
         this.family = family;
         this.name = name;
