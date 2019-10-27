@@ -17,7 +17,6 @@ public abstract class PlantBedUtility {
 
         // Durchlaufe alle Einträge
         for (T item: bed.getPlants()){
-            // Kein Eintrag an key gefunden? => neue liste
 
             if(!result.containsKey(item.getColor()))
             {
