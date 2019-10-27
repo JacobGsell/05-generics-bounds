@@ -1,6 +1,7 @@
 package ohm.softa.a05.model;
 
 public class Shrub extends Plant{
+
     PlantColor color;
 
     public Shrub(String family, String name, double height, PlantColor color)
